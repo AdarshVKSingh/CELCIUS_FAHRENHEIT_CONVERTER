@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrenheit Degree Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="mainbox">
+
+        <form id="form_temp" onsubmit="convert();return false">
+            <p id="inst">Enter the temperature you want to convert</p>
+            <label for="temp_value" ><br>
+                <input type="number" id ="temp_value" class="a" placeholder="Enter ">
+            </label>
+            <select name="unit" id="unit" class="a">
+                <option value="fahr">Fahrenheit</option>
+                <option value="cel">Celsius</option>
+            </select>
+            <br>
+            <input type="submit" class="a" id = "sub">
+        
+        </form>
+        <div id="output"></div>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
